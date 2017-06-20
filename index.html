@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Footer style -->
+        <title>Граф с людьми в сообществе vk.com</title>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Графы в vk.com</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Главная</a></li>
+                    </ul>
+                </div>
+            </div>
+		</nav>
+        <div class="container theme-showcase" role="main">
+            <!-- HEADER -->
+            <div class="jumbotron">
+                <h1>Связи между пользователями в сообществе <a href="https://vk.com">vk.com</a></h1>
+                <p>Здравствуйте! Этот сайт может показывать связи между разными пользователями в любом сообществе <b>с открытой стеной</b> в ВКонтакте. Просто введите ссылку внизу!</p>
+            </div>
+            <!-- MAIN -->
+            <div align="center">
+                <p>Введите в поле ниже адрес любого сообщества ВКонтакте с открытой стеной. <br />
+                Результат — граф, показывающий связь между его участниками.</p>
+                <p> Адрес сообщества может, например, выглядеть так: <i>vk.com/oldlentach</i>.</p>
+                <form action="/results">
+                    <p>
+                        <input type="text" name="address" placeholder="Адрес сообщества" />
+                        <input type="submit" class="btn btn-md btn-primary" value="Посмотреть результаты" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
